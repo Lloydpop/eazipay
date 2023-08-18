@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap);
+@font-face {
+  font-family: Aeonik;
+  src: local("Aeonik"), url(/fonts/Aeonik-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: Aeonik;
+  src: local("Aeonik"), url(/fonts/Aeonik-Bold.otf) format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: MADE Mellow;
+  font-weight: 500;
+  src: local("MADEMellow"), url(/fonts/yellow.otf) format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Aeonik", sans-serif;
+}
+.made-yellow {
+  font-family: "MADE Mellow", "san-serif";
+}
+html,
+body {
+  overflow-x: hidden;
+}
