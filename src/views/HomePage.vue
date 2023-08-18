@@ -93,8 +93,12 @@
       </div>
       <div class="lg:w-[66%] w-[90%] mx-auto mt-10 relative">
         <div
-          class="absolute -left-[2.7rem] top-[5rem] h-[400px] w-[400px] rounded-full bg-[#11453B] -z-[21] hidden lg:block"
-        ></div>
+          class="absolute -left-[4.5rem] top-[5rem] h-[450px] w-[450px] rounded-full bg-[#F0F7EB] border -z-[21] hidden lg:block p-5"
+        >
+          <div class="h-full w-full rounded-full bg-[#D9EBCD] p-4">
+            <div class="h-full w-full rounded-full bg-[#11453B]"></div>
+          </div>
+        </div>
         <img src="../assets/images/works.png" class="w-full" />
       </div>
     </section>
@@ -103,7 +107,7 @@
     <section
       class="lg:p-[160px] p-10 gap-16 flex flex-col lg:flex-row items-center justify-between bg-[#D9D9D9] forever relative mt-16"
     >
-      <div class="absolute top-0 left-10">
+      <div class="absolute top-0 left-30">
         <img src="../assets/images/download.png" width="50" alt="icon" />
       </div>
       <div class="flex flex-col gap-4">
@@ -179,24 +183,12 @@
             :key="index"
             v-slot:[tab.slotName]
           >
-            <div class="flex-col flex gap-5">
+            <div class="flex-col flex gap-3 mt-3">
               {{ tab.content
-              }}<AppInput
-                id="fname"
-                name="first"
-                placeholder="Enter your first name"
-              />
-              <AppInput
-                id="username"
-                name="username"
-                placeholder="Enter your last name"
-              />
-              <AppInput id="mail" name="email" placeholder="Enter your email" />
-              <AppInput
-                id="number"
-                name="num"
-                placeholder="Enter your phone number"
-              />
+              }}<AppInput id="fname" name="first" placeholder="First name" />
+              <AppInput id="username" name="username" placeholder="Last name" />
+              <AppInput id="mail" name="email" placeholder="Email" />
+              <AppInput id="number" name="num" placeholder=" Phone number" />
               <AppButton :is-full-width="true"> Request demo </AppButton>
             </div>
           </template>
@@ -253,6 +245,15 @@ export default {
 <style lang="css" scoped>
 .card:nth-child(2) {
   margin-left: -150px;
+}
+.card:nth-child(2):hover {
+  margin-left: -10px;
+}
+.card:nth-child(3):hover {
+  margin-left: -10px;
+}
+.card {
+  transition: 1s ease-in-out;
 }
 .box-shadow {
   box-shadow: 0 20px 48px hsla(0, 0%, 66.7%, 0.29);

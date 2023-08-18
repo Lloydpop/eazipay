@@ -40,8 +40,8 @@
       <section class="mt-6">
         <img src="../assets/images/flow.png" />
       </section>
-      <section>
-        <h1 class="text-[30px] font-semibold">Recent Activities</h1>
+      <section class="ml-1">
+        <h1 class="text-[24px] font-semibold mb-2">Recent Activities</h1>
         <SearchFillter />
         <div class="mb-5" v-for="item in description" :key="item.title">
           <h1 class="text-[18px] mt-5">{{ item.date }}</h1>

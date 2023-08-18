@@ -9,7 +9,10 @@
         <img src="../assets/images/aged.png" class="w-[40px]" />
         <div>
           <h1 class="text-lg font-semibold">Nne Abasiama</h1>
-          <p>Admin</p>
+          <p class="flex items-center gap-[64px]">
+            Admin
+            <img src="../assets/images/ico.png" class="w-3 -rotate-[90deg]" />
+          </p>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@
           <img src="../assets/images/ico.png" class="w-3 absolute right-0" />
         </li>
       </ul>
-      <ul class="flex flex-col gap-10 pt-12 px-3 pb-4">
+      <ul class="flex flex-col gap-10 pt-5 px-3 pb-4">
         <li
           class="text-[14px] hover:text-[#EA4E4B] p-2 duration-[0.5s] cursor-pointer flex items-center gap-3 relative border-b-[1px]"
           v-for="link in footerNav"
